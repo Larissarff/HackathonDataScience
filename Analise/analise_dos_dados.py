@@ -16,7 +16,7 @@ operacao_real = pd.read_csv("Dados/operacao_real.csv")
 
 # 2. Seleção de Features
 
-num_cols = ["temperatura", "vibracao", "consumo_energia", "latencia_rede",
+num_cols = ["vibracao", "consumo_energia", "latencia_rede",
             "carga_sistema", "erros_24h", "manutencoes_30d",
             "idade_equipamento_meses", "umidade", "fluxo_dados"]
 cat_cols = ["setor"]
