@@ -47,7 +47,7 @@ A execução do script de preparação analisou **10.000 unidades únicas** (tot
 * **Tratamento de Outliers:** Identificados desvios expressivos via método IQR em `temperatura` (376 outliers, com pico máximo em $256{,}71^\circ\text{C}$), `vibracao` (231 outliers, máximo de $12{,}27$) e `latencia_rede` (295 outliers).
 
 
-* **Decisão Operacional:** Os outliers **não foram descartados**, pois em telemetria industrial representam anomalias físicas que antecedem a quebra iminente, sendo cruciais para o aprendizado do modelo.
+* **Decisão Operacional:** Devido aos outliers presentes nos dados de temperatura e a informação de que estariam sendo medidos de forma errônea, os dados ** foram descartados**, pois em telemetria industrial representam anomalias físicas que antecedem a quebra iminente, sendo cruciais para o aprendizado do modelo, e por se tratar de uma falha no medidor, não se é possível confiar em nenhum dos dados.
 
 
 
